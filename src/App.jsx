@@ -38,7 +38,7 @@ function App() {
   return (
     <>
       <div id="main">
-        <h1 id="heading">UrlHub</h1>
+        <h1 id="heading">Bookmark Hub</h1>
         <div className="create-btn">
           <Link to="/create">+ Add Bookmarks</Link>
         </div>
