@@ -1,0 +1,39 @@
+{
+  "sites": [
+    {
+      "id": "6",
+      "name": "Stack Overflowing",
+      "url": "https://stackoverflow.com"
+    },
+    {
+      "id": "8",
+      "name": "myFav",
+      "url": "https://www.youtube.com"
+    },
+    {
+      "id": "9",
+      "name": "Amazoning",
+      "url": "https://www.amazon.com"
+    },
+    {
+      "id": "10",
+      "name": "Netflix",
+      "url": "https://www.netflix.com"
+    },
+    {
+      "id": "9db7",
+      "name": "Youtube",
+      "url": "https://www.youtube.com/watch?v=Rm4__WgPncI&t=1900s"
+    },
+    {
+      "id": "c2c3",
+      "name": "Chatgpt",
+      "url": "https://chatgpt.com/g/g-loOLX12QO-react-expert/c/6995fd3f-9da4-83a3-8372-19806b25bb1d"
+    },
+    {
+      "id": "078f",
+      "name": "Claude",
+      "url": "https://claude.ai/new"
+    }
+  ]
+}
