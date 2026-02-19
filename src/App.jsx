@@ -38,6 +38,7 @@ function App() {
   return (
     <>
       <div id="main">
+        <h1 id="heading">UrlHub</h1>
         <div className="create-btn">
           <Link to="/create">+ Add Bookmarks</Link>
         </div>
@@ -64,7 +65,7 @@ function App() {
                   <td>
                     <Link to={`/update/${d.id}`}>Update</Link>
                     <button onClick={() => handleDelete(d.id)}>Delete</button>
-                    <Link to={`${d.url}`}>Use</Link>
+                    <Link to={`${d.url}`}>Navigate</Link>
                   </td>
                 </tr>
               );
