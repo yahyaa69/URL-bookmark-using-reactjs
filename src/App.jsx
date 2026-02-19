@@ -11,8 +11,8 @@ function App() {
   let [record, setRecord] = useState([]);
 
   useEffect(() => {
-    axios.get("https://bookmarkapi-110o.onrender.com/sites").then((res) => {
-      // console.log(res);
+    axios.get("https://bookmark-data.onrender.com/sites")
+    .then((res) => {
       if (res.data.length > 0) {
       setColumn(Object.keys(res.data[0]));
       setRecord(res.data);
@@ -28,7 +28,7 @@ function App() {
     let ans = window.confirm("Do you want to Delete the bookmark?");
 
     if (ans) {
-      axios.delete(`https://bookmarkapi-110o.onrender.com/sites/${id}`).then((res) => {
+      axios.delete(`https://bookmark-data.onrender.com/sites/${id}`).then((res) => {
         alert("The bookmark is been removed!!!");
         setRecord((prev) => prev.filter((item) => item.id !== id));
       });

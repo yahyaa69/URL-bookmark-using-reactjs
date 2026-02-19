@@ -8,7 +8,7 @@ const Update = () => {
     let [data,setData] = useState({id:'',name:'',url:''});
     let {id} = useParams();
     useEffect(()=>{
-        axios.get('https://bookmarkapi-110o.onrender.com/sites/'+id)
+        axios.get('https://bookmark-data.onrender.com/sites/'+id)
         .then((res)=>{
             setData(res.data)
         })  
@@ -17,7 +17,7 @@ const Update = () => {
     let handleSubmit = (e)=>{
         e.preventDefault();
 
-        axios.put('https://bookmarkapi-110o.onrender.com/sites/'+id,data)
+        axios.put('https://bookmark-data.onrender.com/sites/'+id,data)
         .then(()=>{
             alert('Data Updated Successfully!!!')
             navigate('/')

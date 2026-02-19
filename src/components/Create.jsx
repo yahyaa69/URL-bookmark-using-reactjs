@@ -7,7 +7,7 @@ const Create = () => {
     let [info, setInfo] = useState([])
 
     useEffect(()=>{
-        axios.get('https://bookmarkapi-110o.onrender.com/sites')
+        axios.get('https://bookmark-data.onrender.com/sites')
         .then((res)=>{
             setInfo(res.data)
         })
@@ -30,7 +30,7 @@ const Create = () => {
     let handleSubmit = (e)=>{
         e.preventDefault()
         if(name.trim() && url.trim()){
-        axios.post('https://bookmarkapi-110o.onrender.com/sites',inputData)
+        axios.post('https://bookmark-data.onrender.com/sites',inputData)
         .then(()=>{
             alert('The data is added Successfully!!!')
             navigate('/')
